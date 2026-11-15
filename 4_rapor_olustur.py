@@ -13,7 +13,7 @@ def safe_add_picture(doc, img_path: Path, width_inches: float):
     with Image.open(img_path) as im:
         im_rgb = im.convert("RGB")
         buf = io.BytesIO()
-        im_rgb.save(buf, format="PNG")
+        im_rgb.thumbnail((1100, 1100)); im_rgb.save(buf, format="JPEG", quality=85)
         buf.seek(0)
         doc.add_picture(buf, width=Inches(width_inches))
 
@@ -235,3 +235,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
