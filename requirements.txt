@@ -1,0 +1,7 @@
+﻿ultralytics
+gradio
+opencv-python
+pillow
+pyyaml
+requests
+python-docx

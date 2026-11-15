@@ -1,0 +1,18 @@
+{
+  "Model": "Ultralytics YOLOv8n (Nano)",
+  "Input_Size": "640x640x3",
+  "Epochs": 5,
+  "Batch_Size": 16,
+  "Learning_Rate": 0.0001,
+  "Optimizer": "AdamW",
+  "Loss_Function": "CIoU Loss + DFL (Distribution Focal Loss) + BCEWithLogitsLoss",
+  "Activation_Function": "SiLU (Swish) + Sigmoid",
+  "Training_Time_Sec": 138.78,
+  "Inference_Time_Ms": 66.44,
+  "mAP50": 0.7367,
+  "mAP50_95": 0.6099,
+  "Mean_IoU": 0.6652,
+  "Precision": 0.8448,
+  "Recall": 0.549,
+  "F1_Score": 0.6655
+}
